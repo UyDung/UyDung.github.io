@@ -279,10 +279,12 @@ ul {
 .wrapper .features__wrapper .tasks_content .simple,
 .wrapper .features__wrapper .tasks_content .speedy,
 .wrapper .features__wrapper .tasks_content .share {
-  width: 100%;
+  width: 69.375rem;
+  margin: auto;
   top: 1.875rem;
-  left: 50%;
   display: none;
+  gap: 3.125rem;
+  position: relative;
   /*  &__text */
 }
 .wrapper .features__wrapper .tasks_content .simple > *,
@@ -325,9 +327,24 @@ ul {
   letter-spacing: 0.03125rem;
   cursor: pointer;
 }
+.wrapper .features__wrapper .tasks_content .simple::before,
+.wrapper .features__wrapper .tasks_content .speedy::before,
+.wrapper .features__wrapper .tasks_content .share::before {
+  content: "";
+  position: absolute;
+  top: 5rem;
+  left: -15.625rem;
+  width: 37.5rem;
+  height: 21.875rem;
+  border: 0.0625rem solid #5368df;
+  background-color: #5368df;
+  z-index: -1;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
 .wrapper .extensions {
   width: 100%;
-  margin-top: 6.25rem;
+  margin-top: 9.375rem;
   font-size: 0.875rem;
   display: flex;
   flex-direction: column;
@@ -445,7 +462,7 @@ ul {
 ***************** Footer *********
 **********************************/
 .footer {
-  margin-top: 6.25rem;
+  margin-top: 9.375rem;
   background-color: #5368df;
   width: 100%;
   height: 28.125rem;
@@ -758,5 +775,7 @@ ul {
     font-size: 16px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
 
 
