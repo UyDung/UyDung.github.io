@@ -114,6 +114,12 @@ ul {
   width: 100%;
   margin: auto;
 }
+.wrapper .header .humberger_content {
+  display: none;
+}
+.wrapper .header__humberger {
+  display: none;
+}
 .wrapper .header nav {
   justify-content: space-between;
   max-width: 100%;
@@ -765,4 +771,3 @@ ul {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
