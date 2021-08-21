@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+            <meta name="viewport" content="width=device-width" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1, minimum-scale=1"
+            />
+            <!-- displays site properly based on user's device -->
+
+            <link
+                  rel="icon"
+                  type="image/png"
+                  sizes="32x32"
+                  href="./images/favicon-32x32.png"
+            />
+            <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+                  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer"
+            />
+            <title>Frontend Mentor | Bookmark landing page</title>
+
+            <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+            <style>
+                  .attribution {
+                        font-size: 11px;
+                        text-align: center;
+                  }
+
+                  .attribution a {
+                        color: hsl(228, 45%, 44%);
+                  }
+            </style>
+            <link rel="stylesheet" href="styles.css" />
+      </head>
+
+      <body>
+            <div class="wrapper">
+                  <!-- ! -->
+                  <!-- 1 Header-->
+                  <header class="header">
+                        <nav class="flex-row-ai-ct">
+                              <div class="header__logo">
+                                    <a href="#"
+                                          ><img
+                                                src="./images/logo-bookmark.svg"
+                                                alt="logo-bookmark"
+                                    /></a>
+                              </div>
+
+                              <div class="header__menu flex-row-ai-ct">
+                                    <a href="#features">Features</a>
+                                    <a href="#extensions">Pricing</a>
+                                    <a href="#contact">Contact</a>
+                                    <button class="btn header__login">
+                                          Login
+                                    </button>
+                              </div>
+
+                              <div class="header__humberger">
+                                    <img
+                                          src="./images/icon-hamburger.svg"
+                                          alt="humberger"
+                                    />
+                              </div>
+                        </nav>
+
+                        <div class="humberger_content">
+                              <div class="menu_menu">
+                                    <div class="one">
+                                          <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd">
+                                                <path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#242A45" fill-rule="nonzero"/><g><circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5"/>
+                                                <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#fff"/></g></g></svg>
+                                    </div>
+                                    <div class="two">
+                                          <img
+                                                src="./images/icon-close.svg"
+                                                alt="close"
+                                                id="close"
+                                          />
+                                    </div>
+                              </div>
+                              <div class="menu_content">
+                                    <a href="#features">Features</a>
+                                    <a href="#extensions">Pricing</a>
+                                    <a href="#">Contact</a>
+                                    <button class="btn header__login">
+                                          Login
+                                    </button>
+                              </div>
+                              <div class="menu_social">
+                                    <i
+                                          class="
+                                                fab
+                                                fa-facebook-square
+                                                fa-circle
+                                                fa-2x
+                                          "
+                                          style="color: white"
+                                    ></i>
+                                    <i
+                                          class="fab fa-twitter fa-circle fa-2x"
+                                          style="color: white"
+                                    ></i>
+                              </div>
+                        </div>
+                        <!--- Showcase -->
+                        <div class="showcase flex-row-ai-ct">
+                              <div class="showcase__text flex-row-ai-ct">
+                                    <h1>A Simple Bookmark Manager</h1>
+                                    <p>
+                                          A clean and simple interface to
+                                          organize your favourite websites. Open
+                                          a new browser tab and see your sites
+                                          load instantly. Try it for free.
+                                    </p>
+
+                                    <div class="button">
+                                          <button
+                                                class="btn showcase_btn"
+                                                id="btn_chrome"
+                                          >
+                                                Get it on Chrome
+                                          </button>
+                                          <button
+                                                class="btn showcase_btn"
+                                                id="btn_firefox"
+                                          >
+                                                Get it on Firefox
+                                          </button>
+                                    </div>
+                              </div>
+                              <div class="showcase__image">
+                                    <img
+                                          src="./images/illustration-hero.svg"
+                                          alt="hero"
+                                    />
+                              </div>
+                              <!-- End of showcase image-->
+                        </div>
+                        <!-- End of Showcase-->
+                  </header>
+
+                  <!-- 1 Features -->
+                  <div class="features flex-fd-col" id="features">
+                        <!-- Features__text-->
+                        <div class="features__text flex flex-fd-col">
+                              <!-- 2 -->
+                              <h3>Features</h3>
+                              <p>
+                                    Our aim is to make it quick and easy for you
+                                    to access your favourite websites. Your
+                                    bookmarks sync between your devices so you
+                                    can access them on the go
+                              </p>
+                        </div>
+                        <!-- End of features__text-->
+
+                        <!-- Features__wrapper-->
+                        <div class="features__wrapper">
+                              <!-- 2 -->
+                              <!-- Features__wrapper__tasks-->
+                              <div
+                                    class="
+                                          features__wrapper__tasks
+                                          flex-row-ai-ct
+                                    "
+                              >
+                                    <div class="features__tasks_1" id="task_1">
+                                          <p>Simple Bookmarking</p>
+                                    </div>
+                                    <div class="features__tasks_2" id="task_2">
+                                          <p>Speedy Searching</p>
+                                    </div>
+                                    <div class="features__tasks_3" id="task_3">
+                                          <p>Easy Sharing</p>
+                                    </div>
+                              </div>
+                              <!-- End of Features__wrapper__tasks-->
+
+                              <!-- Features__wrapper tasks_content-->
+                              <div class="tasks_content">
+                                    <!-- Simple -->
+                                    <div
+                                          class="simple flex-row-ai-ct active"
+                                          id="task_one"
+                                    >
+                                          <div class="simple__image">
+                                                <img
+                                                      src="images/illustration-features-tab-1.svg"
+                                                      alt="images 1"
+                                                />
+                                          </div>
+
+                                          <div class="simple__text flex-fd-col">
+                                                <h1>Bookmark in one click</h1>
+                                                <p>
+                                                      Organize your bookmarks
+                                                      however you like. Our
+                                                      simple drag-and-drop
+                                                      interface gives you
+                                                      complete control over how
+                                                      you manage your favourite
+                                                      sites.
+                                                </p>
+                                                <button class="btn">
+                                                      More Info
+                                                </button>
+                                          </div>
+                                    </div>
+
+                                    <!-- Speedy -->
+                                    <div
+                                          class="speedy flex-row-ai-ct"
+                                          id="task_two"
+                                    >
+                                          <div class="speedy__image">
+                                                <img
+                                                      src="images/illustration-features-tab-2.svg"
+                                                      alt="images2"
+                                                />
+                                          </div>
+
+                                          <div class="speedy__text flex-fd-col">
+                                                <h1>Intelligent search</h1>
+                                                <p>
+                                                      Our powerful search
+                                                      feature will help you find
+                                                      saved sites in no time at
+                                                      all. No need to trawl
+                                                      through all of your
+                                                      bookmarks.
+                                                </p>
+                                                <button class="btn">
+                                                      More Info
+                                                </button>
+                                          </div>
+                                    </div>
+
+                                    <!-- Share -->
+                                    <div
+                                          class="share flex-row-ai-ct"
+                                          id="task_three"
+                                    >
+                                          <div class="share__image">
+                                                <img
+                                                      src="images/illustration-features-tab-3.svg"
+                                                      alt="images3"
+                                                />
+                                          </div>
+
+                                          <div class="share__text flex-fd-col">
+                                                <h1>Share your bookmarks</h1>
+                                                <p>
+                                                      Easily share your
+                                                      bookmarks and collections
+                                                      with others. Create a
+                                                      shareable link that you
+                                                      can send at the click of a
+                                                      button.
+                                                </p>
+                                                <button class="btn">
+                                                      More Info
+                                                </button>
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- End of Features__wrapper tasks_content-->
+                        </div>
+                        <!-- End of features__wrapper-->
+                  </div>
+                  <!-- 1 End of Features-->
+
+                  <!-- 1 Extensions -->
+                  <div class="extensions" id="extensions">
+                        <div class="extensions__text">
+                              <!-- 222222222222222222  Extension text-->
+                              <h1>Download the extensions</h1>
+                              <p>
+                                    We’ve got more browsers in the pipeline.
+                                    Please do let us know if you’ve got a
+                                    favourite you’d like us to prioritize.
+                              </p>
+                        </div>
+                        <!-- End extension__text-->
+
+                        <div class="extensions__content">
+                              <!-- 2222222  Extension content elements -->
+                              <div class="chrome card">
+                                    <!-- Extension chrome-->
+                                    <div class="main">
+                                          <div class="image">
+                                                <img
+                                                      src="./images/logo-chrome.svg"
+                                                      alt="chrome"
+                                                />
+                                          </div>
+                                          <h3>Add to Chrome</h3>
+                                          <p>Minimum version 62</p>
+                                    </div>
+                                    <div class="btn-install">
+                                          <button class="btn">
+                                                Add & Install Extension
+                                          </button>
+                                    </div>
+                              </div>
+                              <!-- End extension__chrome card-->
+
+                              <div class="firefox card">
+                                    <!-- Extension firefox-->
+                                    <div class="main">
+                                          <div class="image">
+                                                <img
+                                                      src="./images/logo-firefox.svg"
+                                                      alt="firefox"
+                                                />
+                                          </div>
+                                          <h3>Add to Firefox</h3>
+                                          <p>Minimum version 55</p>
+                                    </div>
+                                    <div class="btn-install">
+                                          <button class="btn">
+                                                Add & Install Extension
+                                          </button>
+                                    </div>
+                              </div>
+                              <!-- End extension__firefox card-->
+
+                              <div class="opera card">
+                                    <!-- Extension opera -->
+                                    <div class="main">
+                                          <div class="image">
+                                                <img
+                                                      src="./images/logo-opera.svg"
+                                                      alt="opera"
+                                                />
+                                          </div>
+                                          <h3>Add to Opera</h3>
+                                          <p>Minimum version 46</p>
+                                    </div>
+                                    <div class="btn-install">
+                                          <button class="btn">
+                                                Add & Install Extension
+                                          </button>
+                                    </div>
+                              </div>
+                              <!-- End extension__opera card-->
+                        </div>
+                        <!-- 2222222  End  Extension content elements -->
+                  </div>
+                  <!-- End extensions -->
+
+                  <div class="questions">
+                        <!-- 1 Questions -->
+                        <div class="questions__header">
+                              <!-- 2 Questions__header -->
+                              <h1>Frequently Asked Questions</h1>
+                              <p>
+                                    Here are some of our FAQs. If you have any
+                                    other questions you’d like answered please
+                                    feel free to email us.
+                              </p>
+                        </div>
+                        <!--2 End Questions__header -->
+
+                        <div class="questions__items">
+                              <!--2 Question items-->
+                              <div class="questions__one item">
+                                    <!-- Question 1 -->
+                                    <div class="ask__one ask">
+                                          <p>What is Bookmark?</p>
+                                    </div>
+
+                                    <div class="answer__one answer">
+                                          <p>
+                                                <!-- Answer 1 -->
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit.
+                                                Fusce tincidunt justo eget
+                                                ultricies fringilla. Phasellus
+                                                blandit ipsum quis quam ornare
+                                                mattis.
+                                          </p>
+                                    </div>
+                              </div>
+                              <!-- End Question 1 -->
+
+                              <div class="questions__two item">
+                                    <!-- Question 1 -->
+                                    <div class="ask__two ask">
+                                          <!-- Question 2 -->
+                                          <p>
+                                                How can I request a new browser?
+                                          </p>
+                                    </div>
+
+                                    <div class="answer__two answer">
+                                          <!-- Answer 2 -->
+                                          <p>
+                                                Vivamus luctus eros aliquet
+                                                convallis ultricies. Mauris
+                                                augue massa, ultricies non
+                                                ligula. Suspendisse imperdiet.
+                                                Vivamus luctus eros aliquet
+                                                convallis ultricies. Mauris
+                                                augue massa, ultricies non
+                                                ligula. Suspendisse imperdie
+                                                tVivamus luctus eros aliquet
+                                                convallis ultricies. Mauris
+                                                augue massa, ultricies non
+                                                ligula. Suspendisse imperdiet.
+                                          </p>
+                                    </div>
+                              </div>
+                              <!-- End Question 2 -->
+
+                              <div class="questions__three item">
+                                    <!-- Question 3 -->
+                                    <div class="ask__three ask">
+                                          <p>Is there a mobile app?</p>
+                                    </div>
+
+                                    <div class="answer__three answer">
+                                          <!-- Answer 3 -->
+                                          <p>
+                                                Sed consectetur quam id neque
+                                                fermentum accumsan. Praesent
+                                                luctus vestibulum dolor, ut
+                                                condimentum urna vulputate eget.
+                                                Cras in ligula quis est pharetra
+                                                mattis sit amet pharetra purus.
+                                                Sed sollicitudin ex et ultricies
+                                                bibendum.
+                                          </p>
+                                    </div>
+                              </div>
+                              <!-- End Question 3 -->
+
+                              <div class="questions__four item">
+                                    <!-- Question 4 -->
+                                    <div class="ask__four ask">
+                                          <!-- Question 4 -->
+                                          <p>
+                                                What about other Chromium
+                                                browsers?
+                                          </p>
+                                    </div>
+
+                                    <div class="answer__four answer">
+                                          <!-- Answer 4 -->
+                                          <p>
+                                                Integer condimentum ipsum id
+                                                imperdiet finibus. Vivamus in
+                                                placerat mi, at euismod dui.
+                                                Aliquam vitae neque eget nisl
+                                                gravida pellentesque non ut
+                                                velit.
+                                          </p>
+                                    </div>
+                              </div>
+                              <!-- End Question 4 -->
+                        </div>
+                        <!--2 End Question items-->
+                        <button class="btn btn-question-more">More Info</button>
+                  </div>
+                  <!-- 1 End Questions -->
+            </div>
+            <!-- End wrapper -->
+
+            <footer class="footer">
+                  <!-- ! Footer -->
+                  <!-- !Footer Container-->
+                  <!-- <div class="footer__container"> -->
+
+                  <div class="footer__content">
+                        <!-- 1 Footer content-->
+                        <h3>35.000+ Already Joined</h3>
+                        <h3>Stay up-to-date with what we're doing</h3>
+
+                        <form
+                              onsubmit="formSubmit()"
+                              class="contact__us flex"
+                              id="contact"
+                        >
+                              <div class="form-control" id="form-control">
+                                    <input
+                                          name="email"
+                                          id="email"
+                                          type="text"
+                                          onkeydown="checkEmail()"
+                                          placeholder="Enter your email..."
+                                    />
+                                    <span class="email"></span>
+                                    <img
+                                          id="invalid_email"
+                                          src="./images/icon-error.svg"
+                                          alt="error icon"
+                                    />
+                                    <i
+                                          id="valid_email"
+                                          class="far fa-check-circle"
+                                          style="color: green"
+                                    ></i>
+                              </div>
+                              <div class="button">
+                                    <button
+                                          class="btn"
+                                          type="submit"
+                                          id="submit"
+                                    >
+                                          Contact Us
+                                    </button>
+                              </div>
+                        </form>
+                  </div>
+                  <!-- 1 End Footer content-->
+                  <!-- pattern="[a-zA-Z0-9]{5,30}\@[a-zA-Z0-9]{2,30}\.[a-zA-Z0-9]{2,30}"  -->
+                  <div class="footer__nav">
+                        <!-- 1 Footer nav -->
+                        <div class="footer__nav__logo">
+                              <!-- <img id="footer_logo"
+                                    src="./images/logo-bookmark.svg"
+                                    alt="logo-bookmark"
+                              />    -->
+                              <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd">
+                                    <path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#242A45" fill-rule="nonzero"/><g><circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5"/>
+                                    <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#fff"/></g></g></svg>
+                        </div>
+                        <div class="footer__nav__menu">
+                              <a href="#">Features</a>
+                              <a href="#">Pricing</a>
+                              <a href="#">Contact</a>
+                        </div>
+                        <div class="footer__nav__social">
+                              <i
+                                    class="fab fa-facebook-square fa-2x"
+                                    style="color: white"
+                              ></i>
+                              <i
+                                    class="fab fa-twitter fa-2x"
+                                    style="color: white"
+                              ></i>
+                        </div>
+                  </div>
+                  <!-- 1 End Footer nav -->
+                  <!-- <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p> -->
+                  <!-- </div> !End footer container -->
+            </footer>
+            <!-- ! End Footer -->
+
+            <script src="script.js"></script>
+      </body>
+</html>
