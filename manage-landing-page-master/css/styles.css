@@ -561,3 +561,6 @@ body {
     float: right;
 }
 
+#toggle {
+    display: none;
+}
