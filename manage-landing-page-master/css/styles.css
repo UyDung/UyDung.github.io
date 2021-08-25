@@ -113,6 +113,35 @@ body {
   opacity: 0.7;
 }
 
+.slide {
+  visibility: visible;
+  transform: translateX(-400%);
+  transition: 0.5s ease;
+}
+
+.slide-next {
+  visibility: hidden;
+  transform: translateX(400%);
+  transition: 0.5s ease;
+}
+
+.parrent {
+  transform: translateX(-100%);
+  transition: 0.5s ease;
+  display: none;
+}
+
+.child {
+  position: relative;
+  right: -100%;
+  display: flex;
+}
+
+.carrers__element {
+  animation: showImage infinite 3s;
+  animation-delay: 2s;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: auto;
@@ -139,21 +168,16 @@ body {
   opacity: 0.4;
 }
 .header nav .humberger__btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
   border: 0;
+  display: none;
 }
 .header nav .humberger__btn > * {
-  display: block;
-  transition: transform 0.4s;
-  position: absolute;
   width: 30px;
-  margin-bottom: 3px;
-  background-color: #000;
-  border-radius: 4px;
+  height: 5px;
+  margin: 3px;
   border-style: solid;
+  background: #333;
+  display: block;
 }
 .header nav .humberger__open > * {
   position: absolute;
@@ -185,7 +209,6 @@ body {
   padding: 1.875rem 1.25rem;
   background-color: #f2f2f2;
   border-radius: 0.625rem;
-  gap: 2.5rem;
   display: flex;
   width: 18.75rem;
   position: absolute;
@@ -193,10 +216,17 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
-  visibility: hidden;
+  display: none;
 }
 .header nav .humberger a {
   display: block;
+  padding: 1.25rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 70px 0 70px 0;
+}
+.header nav .humberger a:hover {
+  background-color: #fff;
 }
 
 .main {
@@ -469,7 +499,7 @@ body {
     gap: 1.875rem;
   }
 }
-@media (max-width: 31.25rem) {
+@media screen and (max-width: 31.25rem) {
   .header nav .menu {
     display: none;
   }
