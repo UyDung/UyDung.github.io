@@ -552,5 +552,12 @@ body {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+////////////////////////////////////
+.label{
+  font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
 
